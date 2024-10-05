@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: erlang:22.0.7
+      image: erlang
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Compile
       run: rebar3 compile
     - name: Run tests
